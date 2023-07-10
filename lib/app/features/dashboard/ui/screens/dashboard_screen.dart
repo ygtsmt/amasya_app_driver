@@ -19,7 +19,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         const AmasyaScreenHeader(title: "Sürücü"),
-        Expanded(f
+        Expanded(
           child: Row(
             children: [
               Expanded(
