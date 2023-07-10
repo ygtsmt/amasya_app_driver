@@ -49,17 +49,13 @@ class _NumberSixScreenState extends State<NumberSixScreen> {
       // aktiflige gore degerdegsitir
       if (_locationSubscription != null)
         Expanded(
-          child: Container(
-            color: Colors.red.shade900,
-            child: Center(
-              child: Text(
-                "6 NUMARALI OTOBÜS OLARAK KONUMUNUZ PAYLAŞILIYOR\n(Yolculuk bittiğinde kapatınız.)",
-                style: Theme.of(context)
-                    .textTheme
-                    .displayLarge!
-                    .copyWith(fontWeight: FontWeight.bold, color: Colors.black),
-                textAlign: TextAlign.center,
-              ),
+          child: Center(
+            child: Text(
+              "6 NUMARALI OTOBÜS OLARAK KONUMUNUZ PAYLAŞILIYOR\n(Yolculuk bittiğinde kapatınız.)",
+              style: Theme.of(context).textTheme.displayLarge!.copyWith(
+                    fontWeight: FontWeight.bold,
+                  ),
+              textAlign: TextAlign.center,
             ),
           ),
         )

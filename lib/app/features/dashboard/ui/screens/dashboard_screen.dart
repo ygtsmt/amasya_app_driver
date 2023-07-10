@@ -15,12 +15,14 @@ class DashboardScreen extends StatefulWidget {
 class _DashboardScreenState extends State<DashboardScreen> {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        const AmasyaScreenHeader(title: "Sürücü"),
-        Expanded(
-          child: Row(
+    return SingleChildScrollView(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          const AmasyaScreenHeader(
+            title: "Sürücü",
+          ),
+          Row(
             children: [
               Expanded(
                   child: Padding(
@@ -34,9 +36,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
               )),
             ],
           ),
-        ),
-        Expanded(
-          child: Row(
+          Row(
             children: [
               Expanded(
                   child: Padding(
@@ -50,9 +50,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
               )),
             ],
           ),
-        ),
-        Expanded(
-          child: Row(
+          Row(
             children: [
               Expanded(
                   child: Padding(
@@ -66,8 +64,8 @@ class _DashboardScreenState extends State<DashboardScreen> {
               )),
             ],
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }
