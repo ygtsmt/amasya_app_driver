@@ -45,15 +45,12 @@ class _NumberOneScreenState extends State<NumberOneScreen> {
       if (_locationSubscription != null)
         Expanded(
             child: Center(
-              child: Text(
-                "1 NUMARALI OTOBÜS OLARAK KONUMUNUZ PAYLAŞILIYOR\n(Yolculuk bittiğinde kapatınız.)",
-                style: Theme.of(context)
-                    .textTheme
-                    .displayLarge!
-                    .copyWith(fontWeight: FontWeight.bold),
-                textAlign: TextAlign.center,
-              ),
-            ))
+          child: Text(
+            "1 NUMARALI OTOBÜS OLARAK KONUMUNUZ PAYLAŞILIYOR\n(Yolculuk bittiğinde kapatınız.)",
+            style: Theme.of(context).textTheme.headlineLarge!.copyWith(fontWeight: FontWeight.bold),
+            textAlign: TextAlign.center,
+          ),
+        ))
     ]);
   }
 

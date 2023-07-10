@@ -52,7 +52,7 @@ class _NumberSixScreenState extends State<NumberSixScreen> {
           child: Center(
             child: Text(
               "6 NUMARALI OTOBÜS OLARAK KONUMUNUZ PAYLAŞILIYOR\n(Yolculuk bittiğinde kapatınız.)",
-              style: Theme.of(context).textTheme.displayLarge!.copyWith(
+              style: Theme.of(context).textTheme.headlineLarge!.copyWith(
                     fontWeight: FontWeight.bold,
                   ),
               textAlign: TextAlign.center,

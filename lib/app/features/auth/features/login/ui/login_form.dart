@@ -74,7 +74,7 @@ class _LoginFormState extends State<LoginForm> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Text(
-                    'Giriş Yap',
+                    'Sürücü Girişi Yap',
                     style: Theme.of(context).textTheme.headlineLarge,
                   ),
                   const SizedBox(
@@ -148,18 +148,13 @@ class _LoginFormState extends State<LoginForm> {
                 ),
                 TextButton(
                   onPressed: () {
-                //    context.router.navigate(const SignupScreenRoute());
+                    //    context.router.navigate(const SignupScreenRoute());
                   },
                   child: RichText(
                     text: TextSpan(
-                      text: 'Henüz hesabınız yok mu? ',
+                      text: 'Hesabınız yoksa yöneticiye ulaşınız. ',
                       style: Theme.of(context).textTheme.bodyMedium,
-                      children: <TextSpan>[
-                        TextSpan(
-                          text: 'Hemen Oluştur!',
-                          style: Theme.of(context).textTheme.bodyMedium?.copyWith(fontWeight: FontWeight.bold),
-                        ),
-                      ],
+                      children: const <TextSpan>[],
                     ),
                   ),
                 ),

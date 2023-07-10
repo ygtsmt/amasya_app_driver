@@ -51,7 +51,7 @@ class _NumberTwoScreenState extends State<NumberTwoScreen> {
             child: Center(
           child: Text(
             "2 NUMARALI OTOBÜS OLARAK KONUMUNUZ PAYLAŞILIYOR\n(Yolculuk bittiğinde kapatınız.)",
-            style: Theme.of(context).textTheme.displayLarge!.copyWith(fontWeight: FontWeight.bold),
+            style: Theme.of(context).textTheme.headlineLarge!.copyWith(fontWeight: FontWeight.bold),
             textAlign: TextAlign.center,
           ),
         ))
