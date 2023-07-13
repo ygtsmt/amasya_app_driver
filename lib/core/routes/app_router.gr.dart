@@ -324,28 +324,10 @@ class _$AppRouter extends RootStackRouter {
         barrierDismissible: false,
       );
     },
-    ScanDriverLicenceScreenRoute.name: (routeData) {
-      return CustomPage<dynamic>(
-        routeData: routeData,
-        child: const ScanDriverLicenceScreen(),
-        transitionsBuilder: TransitionsBuilders.fadeIn,
-        opaque: true,
-        barrierDismissible: false,
-      );
-    },
     IletisimScreenRoute.name: (routeData) {
       return CustomPage<dynamic>(
         routeData: routeData,
         child: const IletisimScreen(),
-        transitionsBuilder: TransitionsBuilders.fadeIn,
-        opaque: true,
-        barrierDismissible: false,
-      );
-    },
-    ScanVehicleCardScreenRoute.name: (routeData) {
-      return CustomPage<dynamic>(
-        routeData: routeData,
-        child: const ScanVehicleCardScreen(),
         transitionsBuilder: TransitionsBuilders.fadeIn,
         opaque: true,
         barrierDismissible: false,
@@ -513,11 +495,6 @@ class _$AppRouter extends RootStackRouter {
                   path: 'kent-bilgisi-screen',
                   parent: PeTabRouter.name,
                 ),
-                RouteConfig(
-                  ScanDriverLicenceScreenRoute.name,
-                  path: 'scan-driver-licence-screen',
-                  parent: PeTabRouter.name,
-                ),
               ],
             ),
             RouteConfig(
@@ -535,11 +512,6 @@ class _$AppRouter extends RootStackRouter {
                 RouteConfig(
                   IletisimScreenRoute.name,
                   path: 'communication-screen',
-                  parent: CollectionTabRouter.name,
-                ),
-                RouteConfig(
-                  ScanVehicleCardScreenRoute.name,
-                  path: 'scan-vehicle-card-screen',
                   parent: CollectionTabRouter.name,
                 ),
               ],
@@ -1027,18 +999,6 @@ class KentBilgisiScreenRoute extends PageRouteInfo<void> {
 }
 
 /// generated route for
-/// [ScanDriverLicenceScreen]
-class ScanDriverLicenceScreenRoute extends PageRouteInfo<void> {
-  const ScanDriverLicenceScreenRoute()
-      : super(
-          ScanDriverLicenceScreenRoute.name,
-          path: 'scan-driver-licence-screen',
-        );
-
-  static const String name = 'ScanDriverLicenceScreenRoute';
-}
-
-/// generated route for
 /// [IletisimScreen]
 class IletisimScreenRoute extends PageRouteInfo<void> {
   const IletisimScreenRoute()
@@ -1048,16 +1008,4 @@ class IletisimScreenRoute extends PageRouteInfo<void> {
         );
 
   static const String name = 'IletisimScreenRoute';
-}
-
-/// generated route for
-/// [ScanVehicleCardScreen]
-class ScanVehicleCardScreenRoute extends PageRouteInfo<void> {
-  const ScanVehicleCardScreenRoute()
-      : super(
-          ScanVehicleCardScreenRoute.name,
-          path: 'scan-vehicle-card-screen',
-        );
-
-  static const String name = 'ScanVehicleCardScreenRoute';
 }
